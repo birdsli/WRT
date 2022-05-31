@@ -1,0 +1,57 @@
+// const HtmlWebpackPlugin = require('html-webpack-plugin'),
+// path = require('path');
+// module.exports = {
+// mode:'development', 
+// entry:{
+//   index:path.resolve(__dirname,'./src/js/index.js'),
+// },            
+// output:{
+//   path:path.resolve(__dirname,'./dist'),          
+//   filename:'js/[name].js',      
+// },
+// module:{
+//   rules:[ 
+//       {
+//           test:/\.js$/,
+//           loader:'babel-loader',
+//           exclude:path.resolve(__dirname,'node_modules')
+//       },
+//       {
+//           test:/\.css$/,
+//           use:[
+//               //顺序不可改，因为执行是倒序的，执行需要按现在倒序的顺序执行。
+//               'style-loader',
+//               'css-loader'
+//           ]
+//       },
+//       {
+//           test:/\.scss$/,
+//           use:[
+//               'style-loader',
+//               'css-loader',
+//               'sass-loader'
+//           ]
+//       },
+//       {
+//           test:/\.tpl$/,
+//           loader:'ejs-loader'
+//       }
+//   ]
+// },
+// plugins:[
+//   new HtmlWebpackPlugin({
+//       //打包后的filename是什么
+//       filename:'index.html',
+//       template:path.resolve(__dirname,'./src/index.html'),
+//       chunks:[
+//           'index',//如果有jquery,
+//       ],
+//       excludeChunks:['node_modules']//排除
+//   })
+// ],
+// devServer:{
+//   open:true,
+//   host:'localhost',
+//   port:3000
+// }
+// }

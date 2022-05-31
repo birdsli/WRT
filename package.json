@@ -1,0 +1,57 @@
+{
+  "name": "sel_netsli_007",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev2": "webpack serve --config config/webpack.dev.js  --mode development",
+    "build2": "webpack --config config/webpack.prod.js  --mode production",
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.17.12",
+    "@babel/runtime": "^7.17.9",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^17.0.35",
+    "@types/react": "^17",
+    "@types/react-dom": "^17.0.5",
+    "antd": "^4.19.5",
+    "axios": "^0.27.1",
+    "babel-plugin-import": "^1.13.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-mobx": "^2.0.0",
+    "express": "^4.18.0",
+    "mysql": "^2.18.1",
+    "next": "^11.0.0",
+    "node-sass": "^7.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "scss": "^0.2.4",
+    "typescript": "^4.6.4",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  }
+}
